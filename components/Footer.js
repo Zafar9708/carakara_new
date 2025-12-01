@@ -98,9 +98,9 @@ export default function Footer() {
               <p>
                 © {currentYear} Prashma's Growberry Pvt Ltd (Carakara). All rights reserved.
               </p>
-              <p className="mt-1">
+              {/* <p className="mt-1">
                 GSTIN: 09AAICP1234M1Z5 • FSSAI License No: 12345678901234
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
