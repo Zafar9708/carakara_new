@@ -35,7 +35,7 @@ export default function SimpleBigCards() {
         {/* Section Header - Professional typography */}
         <div className="text-center mb-20">
           <div className="inline-block mb-6">
-            <span className="text-sm font-medium tracking-widest uppercase text-gray-500 border-b border-gray-200 pb-2">
+            <span className="text-2xl font-medium tracking-widest uppercase text-gray-500 border-b border-gray-200 pb-2">
               Coming Soon
             </span>
           </div>

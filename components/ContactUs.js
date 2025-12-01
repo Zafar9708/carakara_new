@@ -47,15 +47,15 @@ export default function ContactUs() {
       address: "Gautam Buddha Nagar, 201310, INDIA",
       action: "https://maps.google.com"
     },
-    {
-      icon: <Mail className="text-black" size={20} />,
-      title: "Email",
-      details: "info@carakara.com",
-      description: "Business Inquiries",
-      extra: "hello@carakara.com",
-      address: "Customer Support",
-      action: "mailto:info@carakara.com"
-    },
+    // {
+    //   icon: <Mail className="text-black" size={20} />,
+    //   title: "Email",
+    //   details: "info@carakara.com",
+    //   description: "Business Inquiries",
+    //   extra: "hello@carakara.com",
+    //   address: "Customer Support",
+    //   action: "mailto:info@carakara.com"
+    // },
     // {
     //   icon: <Phone className="text-black" size={20} />,
     //   title: "Phone",
@@ -77,10 +77,10 @@ export default function ContactUs() {
   ]
 
   const faqItems = [
-    {
-      question: "Where are Carakara drinks manufactured?",
-      answer: "All Carakara beverages are manufactured in our state-of-the-art facility in Greater Noida, adhering to strict quality control standards and using only 100% plant-based ingredients."
-    },
+    // {
+    //   question: "Where are Carakara drinks manufactured?",
+    //   answer: "All Carakara beverages are manufactured in our state-of-the-art facility in Greater Noida, adhering to strict quality control standards and using only 100% plant-based ingredients."
+    // },
     {
       question: "Do you offer wholesale or bulk orders?",
       answer: "Yes, we provide wholesale pricing for businesses, gyms, and wellness centers. Contact our corporate sales team at info@carakara.com for customized bulk order solutions."
@@ -97,17 +97,17 @@ export default function ContactUs() {
         {/* Section Header with professional typography */}
         <div className="text-center mb-24">
           <div className="inline-block mb-6">
-            <span className="text-sm font-medium tracking-widest uppercase text-gray-500 border-b border-gray-200 pb-2">
+            <span className="text-2xl font-medium tracking-widest uppercase text-gray-500 border-b border-gray-200 pb-2">
               Get In Touch
             </span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-light text-black tracking-tight mb-8">
+          {/* <h1 className="text-5xl md:text-6xl font-light text-black tracking-tight mb-8">
             Connect With Us
-          </h1>
+          </h1> */}
           <div className="max-w-2xl mx-auto">
             <p className="text-lg text-gray-600 leading-relaxed">
-              Interested in our plant-based nootropics? Have questions about formulations? 
-              Reach out—our team is here to guide you through wellness.
+              Interested in our nootropics and adaptogenic beverages? 
+              Reach our support team for any questions or feeddback.
             </p>
           </div>
         </div>

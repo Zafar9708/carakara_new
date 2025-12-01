@@ -1,20 +1,21 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { MapPin, Mail } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const footerLinks = {
-    support: [
-      { name: 'Contact Us', href: '/contact' },
-      { name: 'FAQ', href: '/faq' },
-    ],
-    legal: [
-      { name: 'Terms of Service', href: '/terms' },
-      { name: 'Privacy Policy', href: '/privacy' },
-    ]
+    // support: [
+    //   { name: 'Contact Us', href: '/contact' },
+    //   { name: 'FAQ', href: '/faq' },
+    // ],
+    // legal: [
+    //   { name: 'Terms of Service', href: '/terms' },
+    //   { name: 'Privacy Policy', href: '/privacy' },
+    // ]
   }
 
   return (
@@ -26,13 +27,21 @@ export default function Footer() {
             {/* Brand Column */}
             <div className="lg:col-span-2">
               <div className="mb-8">
-                <Link href="/" className="inline-flex items-center space-x-3 group">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                    <span className="text-black font-bold text-lg">C</span>
-                  </div>
-                  <span className="text-2xl font-light tracking-tight">Carakara</span>
-                </Link>
-              </div>
+  <Link href="/" className="inline-flex items-center space-x-3 group">
+    
+    <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-white">
+      <Image 
+        src="/images/Logo.jpg" 
+        alt="Carakara Logo"
+        width={40}
+        height={40}
+        className="object-cover"
+      />
+    </div>
+
+    <span className="text-2xl font-light tracking-tight">Carakara</span>
+  </Link>
+</div>
               
               <div className="space-y-6 max-w-lg">
                 <p className="text-gray-300 leading-relaxed">
@@ -106,7 +115,7 @@ export default function Footer() {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="py-12 border-t border-gray-800">
+        {/* <div className="py-12 border-t border-gray-800">
           <div className="max-w-md mx-auto text-center">
             <h4 className="text-lg font-light text-white mb-4">
               Stay Updated on Wellness Innovation
@@ -131,7 +140,7 @@ export default function Footer() {
               By subscribing, you agree to our Privacy Policy. Unsubscribe anytime.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   )

@@ -104,14 +104,34 @@ export default function ResponsiveHeader() {
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
       }`}>
-        <div className="max-w-7xl mt-6 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Left Navigation - Hidden on mobile */}
             <nav className="hidden lg:flex items-center space-x-8">
+              <Link href="/" className="flex items-center space-x-3 group">
+                {/* Logo Image Container */}
+                <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-white/50 group-hover:border-white transition-all duration-300">
+                  {/* Logo Image - Replace with your actual logo */}
+                  <div className="w-full h-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">C</span>
+                    {/* If you have a logo image, use this instead: */}
+                    <Image
+                      src="/images/Logo.jpg" // Your logo image path
+                      alt="Carakara Logo"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                <span className={`text-xl font-bold transition-colors duration-300 ${
+                  isScrolled ? 'text-black group-hover:text-green-600' : 'text-white group-hover:text-green-300'
+                } hidden lg:inline`}>
+                </span>
+              </Link>
               <Link 
                 href="/" 
                 className={`font-medium transition-colors duration-200 ${
-                  isScrolled ? 'text-gray-700 hover:text-black' : 'text-white hover:text-gray-200'
+                  isScrolled ? 'text-gray-950 hover:text-black' : 'text-white hover:text-gray-200'
                 }`}
               >
                 Home
@@ -119,7 +139,7 @@ export default function ResponsiveHeader() {
               <button 
                 onClick={scrollToContactUs}
                 className={`font-medium transition-colors duration-200 ${
-                  isScrolled ? 'text-gray-700 hover:text-black' : 'text-white hover:text-gray-200'
+                  isScrolled ? 'text-gray-950 hover:text-black' : 'text-white hover:text-gray-200'
                 }`}
               >
                 Contact Us
@@ -130,7 +150,7 @@ export default function ResponsiveHeader() {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`lg:hidden p-2 transition-colors duration-200 ${
-                isScrolled ? 'text-gray-700 hover:text-black' : 'text-white hover:text-gray-200'
+                isScrolled ? 'text-gray-950 hover:text-black' : 'text-white hover:text-gray-200'
               }`}
             >
               <Menu size={24} />
@@ -138,7 +158,7 @@ export default function ResponsiveHeader() {
 
             {/* Center Logo */}
             <div className="flex-1 text-center lg:flex-none">
-              <h1 className={`text-2xl lg:text-3xl font-bold ${
+              <h1 className={`text-2xl lg:text-3xl font-bold mr-12 ${
                 isScrolled ? 'text-black' : 'text-white'
               }`}>
                 Carakara
@@ -152,7 +172,7 @@ export default function ResponsiveHeader() {
                 <button
                   onClick={() => setIsCountryOpen(!isCountryOpen)}
                   className={`flex items-center space-x-2 transition-colors duration-200 ${
-                    isScrolled ? 'text-gray-700 hover:text-black' : 'text-white hover:text-gray-200'
+                    isScrolled ? 'text-gray-950 hover:text-black' : 'text-white hover:text-gray-200'
                   }`}
                 >
                   <MapPin size={18} />
@@ -173,7 +193,7 @@ export default function ResponsiveHeader() {
                         }}
                         className="flex items-center justify-between w-full px-4 py-2 text-left hover:bg-gray-50 transition-colors"
                       >
-                        <span className="text-gray-700">{country.name}</span>
+                        <span className="text-gray-950">{country.name}</span>
                         <span className="text-gray-400 text-sm">({country.code})</span>
                       </button>
                     ))}
@@ -205,7 +225,7 @@ export default function ResponsiveHeader() {
                     // Scroll to top if already on home page
                     window.scrollTo({ top: 0, behavior: 'smooth' })
                   }}
-                  className="font-medium text-gray-700 hover:text-black transition-colors py-2 text-left"
+                  className="font-medium text-gray-950 hover:text-black transition-colors py-2 text-left"
                 >
                   Home
                 </button>
@@ -221,7 +241,7 @@ export default function ResponsiveHeader() {
                 
                 {/* Mobile Country Selector */}
                 <div className="pt-4 border-t border-gray-200">
-                  <div className="flex items-center space-x-2 text-gray-700 mb-3">
+                  <div className="flex items-center space-x-2 text-gray-950 mb-3">
                     <MapPin size={18} />
                     <span>Select Country</span>
                   </div>
@@ -342,7 +362,7 @@ export default function ResponsiveHeader() {
             <div className="max-w-md mx-auto lg:mx-0 text-center lg:text-left">
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 lg:mb-6 leading-tight">
                 Plantcrafted &<br />
-                <span className="text-green-300">Sparkling</span><br />
+                <span >sparkling</span><br />
                 brain fuel
               </h2>
               <p className="text-lg sm:text-xl text-gray-200 mb-6 lg:mb-8 px-4 lg:px-0">
