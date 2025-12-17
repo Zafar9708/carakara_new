@@ -11,15 +11,15 @@ export default function EnhancedAnnouncementBar() {
   const announcements = [
     {
       text: "Free shipping when you spend over $50",
-      bgColor: "bg-[#7B3F00]", // Chocolate color
+      bgColor: "bg-[#7B3F00]",
     },
     {
       text: "Save up to 50% off with code: FRESH",
-      bgColor: "bg-[#1B4D3E]", // Dark green color
+      bgColor: "bg-[#1B4D3E]", 
     },
     {
       text: "Stock up and save with a week's supply",
-      bgColor: "bg-[#374151]", // Dark gray color
+      bgColor: "bg-[#374151]", 
     }
   ]
 
@@ -40,7 +40,7 @@ export default function EnhancedAnnouncementBar() {
     const progressInterval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) return 0
-        return prev + 50 // 50% per second (100% in 2 seconds)
+        return prev + 50 
       })
     }, 1000)
 
@@ -54,7 +54,7 @@ export default function EnhancedAnnouncementBar() {
 
   return (
     <div className={`${announcements[currentAnnouncement].bgColor} text-white relative`}>
-      {/* Progress Bar */}
+ 
       <div className="h-1 bg-black bg-opacity-20">
         <div 
           className="h-full bg-white bg-opacity-50 transition-all duration-1000 ease-linear"
