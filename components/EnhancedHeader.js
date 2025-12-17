@@ -229,7 +229,7 @@ export default function ResponsiveHeader() {
                 >
                   Home
                 </button>
-                <button 
+                {/* <button 
                   onClick={() => {
                     setIsMobileMenuOpen(false)
                     scrollToContactUs()
@@ -237,7 +237,7 @@ export default function ResponsiveHeader() {
                   className="font-medium text-gray-700 hover:text-black transition-colors py-2 text-left"
                 >
                   Contact Us
-                </button>
+                </button> */}
                 
                 {/* Mobile Country Selector */}
                 <div className="pt-4 border-t border-gray-200">
@@ -350,7 +350,8 @@ export default function ResponsiveHeader() {
       </header>
 
       {/* Hero Section with Background Image */}
-     <section 
+     {/* Hero Section with Background Image */}
+<section 
   className="relative min-h-screen bg-cover bg-center bg-no-repeat"
   style={{
     backgroundImage: 'url("/images/b1.jpg")',
@@ -366,19 +367,11 @@ export default function ResponsiveHeader() {
         
         {/* Main Headline */}
         <div className="mb-8 lg:mb-10">
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight">
-            Clean &<br />
-            <span className="text-white">Sparkling</span><br />
-            Mental Performance
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+            CLEAN AND SPARKLING BRAIN FUEL<br />
+            ROOTED IN ANCIENT WISDOM<br />
+            AND BACKED BY MODERN SCIENCE
           </h1>
-        </div>
-        
-        {/* Sub-headline */}
-        <div className="mb-10 lg:mb-12">
-          <h2 className="text-2xl sm:text-3xl text-white font-light leading-relaxed">
-            Where ancient wisdom meets<br />
-            modern scientific innovation
-          </h2>
         </div>
         
         {/* Description */}
