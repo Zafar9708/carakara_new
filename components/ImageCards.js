@@ -52,7 +52,8 @@ export default function SimpleBigCards() {
           <div className="max-w-4xl mx-auto">
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
               From high-performing professionals and athletes to creators,<br />
-              students, and parents - focused energy and calm clarity are the real edge. Choose your fuel wisely!
+              students, and parents - focused energy and calm clarity are the real edge.<br></br>
+               Choose your fuel wisely!
             </p>
           </div>
         </div>
@@ -99,27 +100,7 @@ export default function SimpleBigCards() {
                 </div>
 
                 {/* Bullet Points */}
-                <div className="space-y-6">
-                  <div className="flex items-start mb-4">
-                    <div className="mr-4 mt-1 flex-shrink-0">
-                      <div className="w-2 h-2 mt-4 bg-gray-500 rounded-full"></div>
-                    </div>
-                    <p className="text-lg text-gray-600">
-                      In this world full of distraction and an increasing pressure to do it all, choose Carakara {product.id === 1 ? "Focus" : "Calm"} with ingredients that help you:
-                    </p>
-                  </div>
-                  
-                  {product.bullets.map((bullet, index) => (
-                    <div key={index} className="flex items-start">
-                      <div className="mr-4 mt-4 flex-shrink-0">
-                        <div className="w-1.5 h-1.5 bg-gray-500 rounded-full"></div>
-                      </div>
-                      <p className="text-lg text-gray-700 leading-relaxed">
-                        {bullet}
-                      </p>
-                    </div>
-                  ))}
-                </div>
+                
               </div>
             </div>
           ))}
