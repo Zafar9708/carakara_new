@@ -134,7 +134,7 @@ export default function ResponsiveHeader() {
                   isScrolled ? 'text-gray-950 hover:text-black' : 'text-white hover:text-gray-200'
                 }`}
               >
-                Home
+                {/* Home */}
               </Link>
               <button 
                 onClick={scrollToContactUs}
@@ -142,7 +142,7 @@ export default function ResponsiveHeader() {
                   isScrolled ? 'text-gray-950 hover:text-black' : 'text-white hover:text-gray-200'
                 }`}
               >
-                Contact Us
+                {/* Contact Us */}
               </button>
             </nav>
 
@@ -161,7 +161,7 @@ export default function ResponsiveHeader() {
               <h1 className={`text-2xl lg:text-3xl font-bold mr-12 ${
                 isScrolled ? 'text-black' : 'text-white'
               }`}>
-                Carakara
+                Coming Soon
               </h1>
             </div>
 
@@ -350,34 +350,75 @@ export default function ResponsiveHeader() {
       </header>
 
       {/* Hero Section with Background Image */}
-      <section 
-        className="relative h-screen bg-cover bg-center bg-no-repeat pt-16 lg:pt-0"
-        style={{
-          backgroundImage: 'url("/images/b1.jpg")',
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div className="relative z-10 h-full flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="max-w-md mx-auto lg:mx-0 text-center lg:text-left">
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 lg:mb-6 leading-tight">
-                Plantcrafted &<br />
-                <span >sparkling</span><br />
-                brain fuel
-              </h2>
-              <p className="text-lg sm:text-xl text-gray-200 mb-6 lg:mb-8 px-4 lg:px-0">
-                Discover our plant-based, clean and healthy nootropic and adaptogenic drinks made from 100% natural ingredients.
-              </p>
-              <button 
-                onClick={scrollToImageCards}
-                className="bg-green-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-green-600 transition-colors duration-200 w-full sm:w-auto"
-              >
-                Discover Our Products
-              </button>
+     <section 
+  className="relative min-h-screen bg-cover bg-center bg-no-repeat"
+  style={{
+    backgroundImage: 'url("/images/b1.jpg")',
+  }}
+>
+  {/* Background overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+  
+  {/* Content container */}
+  <div className="relative z-10 h-full flex items-center">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
+      <div className="max-w-2xl">
+        
+        {/* Main Headline */}
+        <div className="mb-8 lg:mb-10">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight">
+            Clean &<br />
+            <span className="text-white">Sparkling</span><br />
+            Mental Performance
+          </h1>
+        </div>
+        
+        {/* Sub-headline */}
+        <div className="mb-10 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl text-white font-light leading-relaxed">
+            Where ancient wisdom meets<br />
+            modern scientific innovation
+          </h2>
+        </div>
+        
+        {/* Description */}
+        <div className="mb-12 lg:mb-16">
+          <p className="text-lg sm:text-xl text-gray-200 mb-6 leading-relaxed">
+            Our plant-based drinks are expertly formulated with powerful botanicals and 
+            essential nutrients specifically chosen to enhance mental performance.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+            <div className="flex items-center space-x-3">
+              <div className="w-4 h-4 rounded-full bg-green-500"></div>
+              <span className="text-white font-medium text-lg">100% Natural Ingredients</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <div className="w-4 h-4 rounded-full bg-green-500"></div>
+              <span className="text-white font-medium text-lg">Zero Added Sugar</span>
             </div>
           </div>
         </div>
-      </section>
+        
+        {/* CTA Button */}
+        <div>
+          <button 
+            onClick={scrollToImageCards}
+            className="group bg-green-500 hover:bg-green-600 text-white px-10 py-4 sm:px-12 sm:py-5 rounded-xl font-bold text-lg sm:text-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <span className="flex items-center space-x-3">
+              <span>Discover Our Products</span>
+              <svg className="w-5 h-5 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Removed modals since you commented them out */}
     </>

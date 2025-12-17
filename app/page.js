@@ -11,7 +11,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <EnhancedHeader />
       <ImageCards />
-      <ContactUs />
+      {/* <ContactUs /> */}
       <Footer />
     </div>
   )
