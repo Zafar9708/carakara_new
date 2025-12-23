@@ -88,8 +88,7 @@ export default function SimpleBigCards() {
               </div>
 
               {/* Product Content */}
-              <div className="space-y-8">
-                {/* Product Header */}
+              {/* <div className="space-y-8">
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold text-black tracking-tight mb-4 uppercase">
                     {product.name}
@@ -99,9 +98,8 @@ export default function SimpleBigCards() {
                   </p>
                 </div>
 
-                {/* Bullet Points */}
                 
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

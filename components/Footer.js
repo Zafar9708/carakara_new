@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { MapPin, Mail } from 'lucide-react'
+import { MapPin, Mail,PhoneCall } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -44,10 +44,10 @@ export default function Footer() {
 </div>
               
               <div className="space-y-6 max-w-lg">
-                <p className="text-gray-300 leading-relaxed">
+                {/* <p className="text-gray-300 leading-relaxed">
                   Prashma's Growberry Pvt Ltd pioneers plant-based nootropic and adaptogenic beverages, 
                   combining ancient wisdom with modern science to enhance cognitive performance naturally.
-                </p>
+                </p> */}
                 
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
@@ -67,6 +67,12 @@ export default function Footer() {
                       <Mail className="text-gray-400" size={18} />
                       <a href="mailto:info@carakara.com" className="text-gray-300 hover:text-white transition-colors duration-300">
                         info@carakara.com
+                      </a>
+                    </div>
+                     <div className="flex items-center space-x-3">
+                      <PhoneCall className="text-gray-400" size={18} />
+                      <a href="mailto:info@carakara.com" className="text-gray-300 hover:text-white transition-colors duration-300">
+                        9167700717
                       </a>
                     </div>
                   </div>

@@ -142,7 +142,6 @@ export default function ResponsiveHeader() {
                   isScrolled ? 'text-gray-950 hover:text-black' : 'text-white hover:text-gray-200'
                 }`}
               >
-                {/* Contact Us */}
               </button>
             </nav>
 
@@ -165,10 +164,10 @@ export default function ResponsiveHeader() {
               </h1>
             </div>
 
-            {/* Right Icons */}
+            {/* Right Icons - Search and Country Removed */}
             <div className="flex items-center space-x-4 lg:space-x-6">
-              {/* Country Selector - Hidden on mobile */}
-              <div className="hidden sm:block relative">
+              {/* Country Selector - Commented out */}
+              {/* <div className="hidden sm:block relative">
                 <button
                   onClick={() => setIsCountryOpen(!isCountryOpen)}
                   className={`flex items-center space-x-2 transition-colors duration-200 ${
@@ -199,17 +198,17 @@ export default function ResponsiveHeader() {
                     ))}
                   </div>
                 )}
-              </div>
+              </div> */}
 
-              {/* Search Icon */}
-              <button
+              {/* Search Icon - Commented out */}
+              {/* <button
                 onClick={() => setIsSearchOpen(!isSearchOpen)}
                 className={`transition-colors duration-200 ${
                   isScrolled ? 'text-gray-700 hover:text-black' : 'text-white hover:text-gray-200'
                 }`}
               >
                 <Search size={20} />
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
@@ -239,8 +238,8 @@ export default function ResponsiveHeader() {
                   Contact Us
                 </button> */}
                 
-                {/* Mobile Country Selector */}
-                <div className="pt-4 border-t border-gray-200">
+                {/* Mobile Country Selector - Commented out */}
+                {/* <div className="pt-4 border-t border-gray-200">
                   <div className="flex items-center space-x-2 text-gray-950 mb-3">
                     <MapPin size={18} />
                     <span>Select Country</span>
@@ -264,14 +263,14 @@ export default function ResponsiveHeader() {
                       </button>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </nav>
             </div>
           </div>
         )}
 
-        {/* Search Panel - Fixed to remove price and rating */}
-        {isSearchOpen && (
+        {/* Search Panel - Commented out */}
+        {/* {isSearchOpen && (
           <div className="absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 py-6 max-h-screen overflow-y-auto">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex items-center justify-between mb-6">
@@ -285,7 +284,7 @@ export default function ResponsiveHeader() {
               </div>
               
               {/* Search Input */}
-              <div className="mb-6">
+              {/* <div className="mb-6">
                 <div className="relative">
                   <input
                     type="text"
@@ -298,7 +297,7 @@ export default function ResponsiveHeader() {
               
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                 {/* Left Side - Categories */}
-                <div className="lg:col-span-1">
+                {/* <div className="lg:col-span-1">
                   <h4 className="font-semibold text-gray-900 mb-4">Product Categories</h4>
                   <div className="space-y-2">
                     {categories.map((category) => (
@@ -313,7 +312,7 @@ export default function ResponsiveHeader() {
                 </div>
 
                 {/* Right Side - Best Sellers */}
-                <div className="lg:col-span-3">
+                {/* <div className="lg:col-span-3">
                   <h4 className="font-semibold text-gray-900 mb-4">Our Products</h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {bestSellers.map((product) => (
@@ -338,7 +337,7 @@ export default function ResponsiveHeader() {
                         <div className="flex-1 text-center sm:text-left">
                           <h5 className="font-semibold text-gray-900">{product.name}</h5>
                           {/* Removed price and rating sections */}
-                        </div>
+                        {/* </div>
                       </div>
                     ))}
                   </div>
@@ -346,74 +345,70 @@ export default function ResponsiveHeader() {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </header>
 
       {/* Hero Section with Background Image */}
-     {/* Hero Section with Background Image */}
-<section 
-  className="relative min-h-screen bg-cover bg-center bg-no-repeat"
-  style={{
-    backgroundImage: 'url("/images/b1.jpg")',
-  }}
->
-  {/* Background overlay */}
-  <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-  
-  {/* Content container */}
-  <div className="relative z-10 h-full flex items-center">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
-      <div className="max-w-2xl">
+      <section 
+        className="relative min-h-screen bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url("/images/b1.jpg")',
+        }}
+      >
+        {/* Background overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         
-        {/* Main Headline */}
-        <div className="mb-8 lg:mb-10">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-            CLEAN AND SPARKLING BRAIN FUEL<br />
-            ROOTED IN ANCIENT WISDOM<br />
-            AND BACKED BY MODERN SCIENCE
-          </h1>
-        </div>
-        
-        {/* Description */}
-        <div className="mb-12 lg:mb-16">
-          <p className="text-lg sm:text-xl text-gray-200 mb-6 leading-relaxed">
-            Our plant-based drinks are expertly formulated with powerful botanicals and 
-            essential nutrients specifically chosen to enhance mental performance.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
-            <div className="flex items-center space-x-3">
-              <div className="w-4 h-4 rounded-full bg-green-500"></div>
-              <span className="text-white font-medium text-lg">100% Natural Ingredients</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <div className="w-4 h-4 rounded-full bg-green-500"></div>
-              <span className="text-white font-medium text-lg">Zero Added Sugar</span>
+        {/* Content container */}
+        <div className="relative z-10 h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
+            <div className="max-w-2xl">
+              
+              {/* Main Headline */}
+              <div className="mb-8 lg:mb-10">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                  CLEAN AND SPARKLING  FUEL<br />
+                  ROOTED IN ANCIENT WISDOM<br />
+                  AND BACKED BY MODERN SCIENCE
+                </h1>
+              </div>
+              
+              {/* Description */}
+              <div className="mb-12 lg:mb-16">
+                <p className="text-lg sm:text-xl text-gray-200 mb-6 leading-relaxed">
+                  Our plant-based drinks are expertly formulated with powerful botanicals and 
+                  essential nutrients specifically chosen to enhance mental performance.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-4 h-4 rounded-full bg-green-500"></div>
+                    <span className="text-white font-medium text-lg">100% Natural Ingredients</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-4 h-4 rounded-full bg-green-500"></div>
+                    <span className="text-white font-medium text-lg">Zero  Sugar</span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* CTA Button */}
+              {/* <div>
+                <button 
+                  onClick={scrollToImageCards}
+                  className="group bg-green-500 hover:bg-green-600 text-white px-10 py-4 sm:px-12 sm:py-5 rounded-xl font-bold text-lg sm:text-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <span className="flex items-center space-x-3">
+                    <svg className="w-5 h-5 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
+                </button>
+              </div> */}
+              
             </div>
           </div>
         </div>
-        
-        {/* CTA Button */}
-        <div>
-          <button 
-            onClick={scrollToImageCards}
-            className="group bg-green-500 hover:bg-green-600 text-white px-10 py-4 sm:px-12 sm:py-5 rounded-xl font-bold text-lg sm:text-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
-          >
-            <span className="flex items-center space-x-3">
-              <span>Discover Our Products</span>
-              <svg className="w-5 h-5 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </span>
-          </button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-      {/* Removed modals since you commented them out */}
+      </section>
     </>
   )
 }
